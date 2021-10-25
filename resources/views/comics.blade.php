@@ -13,8 +13,14 @@
                     <h3>Current Series</h3>
                 </div>
                 
-                {{-- <card v-for="(item, index) in CardDc" :key="index" :title="item.series" :source="item.thumb"/>
-                <button class="btn" id="btn-comics">Load More</button> --}}
+                @foreach($comics_links as $comic)
+                <div class="card-comics">
+                    <img src={{ $comic["thumb"] }} alt="{{ $comic["title"] }}">
+                    <h5>{{ $comic["title"] }}</h5>
+                </div>
+                @endforeach
+
+                <button class="btn" id="btn-comics">Load More</button>
 
             </div>
 

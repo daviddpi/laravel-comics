@@ -22,7 +22,7 @@ Route::get('/characters', function () {
 })->name("personaggi");
 
 Route::get('/comics', function () {
-    return view('comics');
+    return view('comics', ['comics_links' => config('comics')] );
 })->name("fumetti");
 
 Route::get('/movies', function () {

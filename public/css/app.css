@@ -103,6 +103,22 @@ header .active a {
 #comics #btn-comics:hover {
   box-shadow: 2px 2px 2px 2px black;
 }
+#comics .card-comics {
+  flex-basis: 16.6666666667%;
+  padding-top: 45px;
+}
+#comics .card-comics h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+#comics .card-comics:hover {
+  cursor: pointer;
+}
+#comics .card-comics img:hover {
+  box-shadow: 2px 2px 2px 2px black;
+  filter: brightness(50%);
+}
 
 * {
   padding: 0;

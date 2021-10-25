@@ -110,4 +110,27 @@ header{
         }
     }
 
+    .card-comics{
+        flex-basis: calc(100% / 6);
+        padding-top: 45px;
+    
+        h5{
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-top: 10px;
+        }
+    
+        &:hover{
+            cursor: pointer;
+        }
+    
+        img{
+    
+            &:hover{
+                box-shadow: 2px 2px 2px 2px black;
+                filter: brightness(50%);
+            }
+        }
+    }
+
 }
