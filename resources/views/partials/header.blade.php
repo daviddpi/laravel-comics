@@ -3,7 +3,9 @@
         <a href="{{ route('home') }}"><img src="{{ asset('images/dc-logo.png') }}" alt="Logo Dc"></a>
         <nav>
             <ul>
-                <li><a href="{{ route('personaggi') }}">Characters</a></li>
+                @foreach($header_link as $link)
+                    <li><a href="{{ route($link["route"]) }}">{{ $link["text"] }}</a></li>
+                @endforeach
             </ul>
         </nav>
     </div>

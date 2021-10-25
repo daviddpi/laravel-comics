@@ -31,7 +31,7 @@ Route::get('/movies', function () {
 
 Route::get('/tv', function () {
     return view('tv');
-});
+})->name('tv');
 
 Route::get('/games', function () {
     return view('games');
@@ -43,16 +43,16 @@ Route::get('/collectibles', function () {
 
 Route::get('/videos', function () {
     return view('videos');
-});
+})->name('videos');
 
 Route::get('/fans', function () {
     return view('fans');
-});
+})->name('fans');
 
 Route::get('/news', function () {
     return view('news');
-});
+})->name('news');
 
 Route::get('/shop', function () {
     return view('shop');
-});
+})->name('shop');
