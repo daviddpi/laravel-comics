@@ -120,6 +120,91 @@ header .active a {
   filter: brightness(50%);
 }
 
+footer .bg-footer {
+  background-image: url("/images/footer-bg.jpg");
+  height: 450px;
+}
+footer .container-footer {
+  width: 1140px;
+  margin: 0 auto;
+  background-image: url("/images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+footer .container-nav-footer {
+  padding: 40px 0;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+footer nav {
+  padding-bottom: 20px;
+}
+footer nav h4 {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+}
+footer nav ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: grey;
+  font-family: sans-serif;
+}
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+footer .bg-followUs {
+  background-color: #303030;
+  height: 100px;
+}
+footer .followUs-container {
+  width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .d-flex {
+  display: flex;
+}
+footer .btn-footer {
+  background-color: transparent;
+  border: 2px solid #0282f9;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+footer .btn-footer:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+footer .text-follow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+footer .text-follow h4 {
+  text-transform: uppercase;
+  color: #0282f9;
+  padding-right: 15px;
+}
+footer .text-follow img {
+  padding: 0 10px;
+}
+footer .text-follow img:hover {
+  cursor: pointer;
+  filter: brightness(200%);
+}
+
 * {
   padding: 0;
   margin: 0;
