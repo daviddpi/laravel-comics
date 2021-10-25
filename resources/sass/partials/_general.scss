@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+//300 400 700
+
+//dimensioni generali
+$generalWidth: 1140px;
+$generalMargin: 0 auto;
+
+
+//colori
+$whiteColor: white;
+$primaryDCcolor: #0282f9;

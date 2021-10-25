@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap);* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+header .bg-header {
+  width: 100%;
+  background-color: white;
+}
+header .conteiner-header {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .conteiner-header img {
+  height: 100px;
+  padding: 15px 0px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+header ul li {
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid transparent;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+}
+header .active {
+  border-bottom: 5px solid #0282f9;
+}
+header .active a {
+  color: #0282f9;
+}
+
+#comics .bg-comics {
+  height: 400px;
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+#comics .bg-container-comics {
+  background-color: #1c1c1c;
+}
+#comics .container-comics {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+}
+#comics .container-comics img {
+  width: 150px;
+}
+#comics .container-comics .title-comics {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(0, -50%);
+  background-color: #0282f9;
+}
+#comics .container-comics .title-comics h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 10px 25px;
+}
+#comics #btn-comics {
+  background-color: #0282f9;
+  border: 2px solid #0282f9;
+  padding: 10px 40px;
+  margin: 35px;
+}
+#comics #btn-comics:hover {
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
