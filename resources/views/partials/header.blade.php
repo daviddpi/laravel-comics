@@ -4,7 +4,9 @@
         <nav>
             <ul>
                 @foreach($header_link as $link)
-                    <li><a href="{{ route($link["route"]) }}">{{ $link["text"] }}</a></li>
+                    <li class="{{request()->routeIs($link['route']) ? 'active' : ''}}">
+                        <a href="{{ route($link["route"]) }}">{{ $link["text"] }}</a>
+                    </li>
                 @endforeach
             </ul>
         </nav>
