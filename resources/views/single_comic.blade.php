@@ -10,13 +10,15 @@
             {{-- titolo e descrizione prodotto --}}
             <div class="container-detail">
                 <div class="info-comic">
-                    <h2>Action Comics #1000: the deluxe edition</h2>
-
+                    <h2>{{$single_comic["title"]}}</h2>
+                    <div class="image-comic">
+                        <img src="{{ asset($single_comic["thumb"]) }}" alt="adv Image">
+                    </div>
                     {{-- prezzo e disponibilità del prodotto --}}
                     <div class="price-container">
                         <div class="price-available">
                             <div class="price">
-                                U.S. Price <span class="cost">$19.99</span>
+                                U.S. Price <span class="cost">{{ $single_comic["price"] }}</span>
                             </div>
                             <div class="available">
                                 Available
@@ -28,7 +30,7 @@
                     </div>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dicta magni distinctio fuga omnis. Ullam odio doloribus harum veritatis natus enim voluptate esse, reprehenderit perferendis minima atque in sit recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptas totam ipsum sit nostrum atque iusto nobis ducimus ex voluptatibus, ab, vero dolorum deserunt qui quod repellat consequuntur quaerat amet.
+                        {{$single_comic["description"]}}
                     </p>
                 </div>
                 <figure>
@@ -45,11 +47,21 @@
                         <h2>Talent</h2>
                         <div class="d-flex inner-specs">
                             <h4>Art by:</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quibusdam nobis. Delectus, obcaecati quibusdam? Nihil corrupti quam exercitationem recusandae similique praesentium accusantium facilis culpa eius nesciunt sit, doloribus officia. Veritatis.</p>
+                            <p>
+                                @foreach ($single_comic["artists"] as $comic)
+                                    {{ $comic }}                                        
+                                @endforeach
+                    
+                            </p>
                         </div>
                         <div class="d-flex inner-specs">
                             <h4>written by:</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quibusdam nobis. Delectus, obcaecati quibusdam? Nihil corrupti quam exercitationem recusandae similique praesentium accusantium facilis culpa eius nesciunt sit, doloribus officia. Veritatis.</p>
+                            <p>
+                                @foreach ($single_comic["writers"] as $comic)
+                                    {{ $comic }}                                        
+                                @endforeach
+                    
+                            </p>
                         </div>
                     </div>
     
@@ -57,20 +69,18 @@
                         <h2>Specs</h2>
                         <div class="d-flex inner-specs">
                             <h4>Series:</h4>
-                            <p>Action comics</p>
+                            <p>{{ $single_comic["series"] }}</p>
                         </div>
                         <div class="d-flex inner-specs">
                             <h4>Us Price:</h4>
-                            <p>Action comics</p>
+                            <p>{{ $single_comic["price"] }}</p>
                         </div>
                         <div class="d-flex inner-specs">
                             <h4>On sale dates:</h4>
-                            <p>Action comics</p>
+                            <p>{{ $single_comic["sale_date"] }}</p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-@endsection
