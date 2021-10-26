@@ -98,16 +98,16 @@
     .wrapper{
         width: $generalWidth;
         margin: $generalMargin;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
 
     .container-detail{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         font-family: 'Roboto Condensed', sans-serif;
 
         .info-comic{
-            width: 50%;
+            width: 70%;
             h2{
                 text-transform: uppercase;
                 margin-bottom: 20px;
@@ -118,7 +118,7 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 100%;
-                width: 60%;
+                width: 75%;
                 padding: 15px;
                 border-right: 1px solid #357739;
 
@@ -136,7 +136,7 @@
             }
 
             .check-available{
-                width: 40%;
+                width: 25%;
                 color: white;
                 display: flex;
                 justify-content: center;
@@ -152,6 +152,47 @@
                 font-family: Arial, Helvetica, sans-serif, sans-serif;
                 font-weight: bold;
                 height: 50px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+
+    .bg-specs-comic{
+        background-color: #f6f6f6;
+        border-top: 1px solid #e3e3e3;
+        padding-bottom: 50px;
+        .wrapper{
+            width: $generalWidth;
+            margin: $generalMargin;
+            padding-top: 15px;
+            h2{
+                margin-bottom: 20px;
+            }
+            .d-flex{
+                display: flex;
+    
+                .talent{
+                    width: 50%;
+                    margin-right: 30px;
+                    
+    
+                    .d-flex{
+                        justify-content: space-between;
+                        p{
+                            width: 70%;
+                        }
+                    }
+                }
+    
+                .specs{
+                    width: 50%;
+                }
+    
+                .inner-specs{
+                    padding: 15px 10px;
+                    border-top: 1px solid #e3e3e3;
+                }
             }
         }
     }
