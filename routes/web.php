@@ -57,7 +57,14 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
-Route::get('/single_comic', function() {
+Route::get('/single_comic/{id}', function($id) {
+    // dump($id);
     $comics = config('comics');
-    return view('single_comic', ['single_comic' => $comics[0]]);
+
+    if(is_numeric($id) && ($id < count($comics)) && ($id >= 0)){
+        $comic = $comics[$id];
+        return view('single_comic', ['single_comic' => $comic]);
+    } else{
+        abort("404");
+    }
 })->name('single_comic',);

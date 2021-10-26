@@ -21,7 +21,7 @@
         margin: $generalMargin;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         color: white;
         font-family: 'Roboto Condensed', sans-serif;
@@ -60,11 +60,16 @@
     .card-comics{
         flex-basis: calc(100% / 6);
         padding-top: 45px;
+
+        a{
+            text-decoration: none;
+            color: currentColor;
+        }
     
         h5{
             font-weight: 400;
             text-transform: uppercase;
-            padding-top: 10px;
+            padding: 10px 5px;
         }
     
         &:hover{
