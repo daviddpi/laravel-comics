@@ -85,6 +85,8 @@
 
 #single-comic{
 
+    position: relative;
+
     .bg-comics{
         height: 400px;
         background-image: url('/images/jumbotron.jpg');
@@ -105,6 +107,14 @@
         display: flex;
         justify-content: space-between;
         font-family: 'Roboto Condensed', sans-serif;
+
+        .image-comic{
+            position: absolute;
+            top: 8%;
+            right: 60%;
+            border: 10px solid $primaryDCcolor;
+            max-width: 100%;
+        }
 
         .info-comic{
             width: 70%;
@@ -169,6 +179,7 @@
             h2{
                 margin-bottom: 20px;
             }
+
             .d-flex{
                 display: flex;
     
@@ -187,6 +198,13 @@
     
                 .specs{
                     width: 50%;
+
+                    .d-flex{
+                        justify-content: space-between;
+                        p{
+                            width: 70%;
+                        }
+                    }
                 }
     
                 .inner-specs{

@@ -79,6 +79,9 @@
   filter: brightness(50%);
 }
 
+#single-comic {
+  position: relative;
+}
 #single-comic .bg-comics {
   height: 400px;
   background-image: url("/images/jumbotron.jpg");
@@ -97,6 +100,13 @@
   display: flex;
   justify-content: space-between;
   font-family: "Roboto Condensed", sans-serif;
+}
+#single-comic .container-detail .image-comic {
+  position: absolute;
+  top: 8%;
+  right: 60%;
+  border: 10px solid #0282f9;
+  max-width: 100%;
 }
 #single-comic .container-detail .info-comic {
   width: 70%;
@@ -168,6 +178,12 @@
 }
 #single-comic .bg-specs-comic .wrapper .d-flex .specs {
   width: 50%;
+}
+#single-comic .bg-specs-comic .wrapper .d-flex .specs .d-flex {
+  justify-content: space-between;
+}
+#single-comic .bg-specs-comic .wrapper .d-flex .specs .d-flex p {
+  width: 70%;
 }
 #single-comic .bg-specs-comic .wrapper .d-flex .inner-specs {
   padding: 15px 10px;
