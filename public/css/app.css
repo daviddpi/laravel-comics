@@ -17,47 +17,6 @@
   box-shadow: 2px 2px 2px black;
 }
 
-header .bg-header {
-  width: 100%;
-  background-color: white;
-}
-header .conteiner-header {
-  width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-header .conteiner-header img {
-  height: 100px;
-  padding: 15px 0px;
-}
-header ul {
-  list-style: none;
-  display: flex;
-  height: 100%;
-}
-header ul li {
-  padding: 0px 10px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  border-bottom: 5px solid transparent;
-}
-header ul li a {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  vertical-align: middle;
-}
-header .active {
-  border-bottom: 5px solid #0282f9;
-}
-header .active a {
-  color: #0282f9;
-}
-
 #comics .bg-comics {
   height: 400px;
   background-image: url("/images/jumbotron.jpg");
@@ -118,6 +77,67 @@ header .active a {
 #comics .card-comics img:hover {
   box-shadow: 2px 2px 2px 2px black;
   filter: brightness(50%);
+}
+
+#single-comic .bg-comics {
+  height: 400px;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  border-bottom: 50px solid #0282f9;
+  margin-bottom: 30px;
+}
+#single-comic .wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+#single-comic .container-detail {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#single-comic .container-detail .info-comic {
+  width: 50%;
+}
+#single-comic .container-detail .info-comic h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#single-comic .container-detail .info-comic .price-available {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  padding: 15px;
+  border-right: 1px solid #357739;
+}
+#single-comic .container-detail .info-comic .price-available .price {
+  color: #bafd9c;
+}
+#single-comic .container-detail .info-comic .price-available .price .cost {
+  color: white;
+}
+#single-comic .container-detail .info-comic .price-available .available {
+  color: #bafd9c;
+}
+#single-comic .container-detail .info-comic .check-available {
+  width: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#single-comic .container-detail .info-comic .price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-weight: bold;
+  height: 50px;
 }
 
 footer .bg-footer {
@@ -222,4 +242,45 @@ footer .text-follow img:hover {
 .btn:hover {
   cursor: pointer;
   box-shadow: 2px 2px 2px black;
+}
+
+header .bg-header {
+  width: 100%;
+  background-color: white;
+}
+header .conteiner-header {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .conteiner-header img {
+  height: 100px;
+  padding: 15px 0px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+header ul li {
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid transparent;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+}
+header .active {
+  border-bottom: 5px solid #0282f9;
+}
+header .active a {
+  color: #0282f9;
 }

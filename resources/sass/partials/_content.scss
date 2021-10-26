@@ -1,58 +1,5 @@
 @import 'general';
 
-// stile header e navbar
-header{
-    
-    .bg-header{
-        width: 100%;
-        background-color: $whiteColor;
-    }
-
-    .conteiner-header{
-        width: $generalWidth;
-        margin: $generalMargin;
-        display: flex;
-        justify-content: space-between;
-
-        img{
-            height: 100px;
-            padding: 15px 0px;
-        }
-    }
-
-    ul{
-        list-style: none;
-        display: flex;
-        height: 100%;
-
-        li{
-            padding: 0px 10px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            border-bottom: 5px solid transparent;
-
-        }
-
-        li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-weight: 700;
-            vertical-align: middle;
-        }
-    }
-
-    .active{ 
-        a{
-            color: $primaryDCcolor;
-
-        }
-        border-bottom: 5px solid $primaryDCcolor;
-        // padding-bottom: 65%;
-    }
-}
 
 // stile pagina comics
 #comics{
@@ -135,108 +82,76 @@ header{
 
 }
 
-footer{
-    
-    .bg-footer{
-        // background-image: url('../assets/img/footer-bg.jpg');
-        background-image: url('/images/footer-bg.jpg');
-        height: 450px;
+
+#single-comic{
+
+    .bg-comics{
+        height: 400px;
+        background-image: url('/images/jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        border-bottom: 50px solid $primaryDCcolor;
+        margin-bottom: 30px;
     }
 
-    .container-footer{
+    .wrapper{
         width: $generalWidth;
         margin: $generalMargin;
-        background-image: url('/images/dc-logo-bg.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        height: 100%;
-        font-family: 'Roboto Condensed', sans-serif;
+        margin-bottom: 150px;
     }
 
-    .container-nav-footer{
-        padding: 40px 0;
-        width: 45%;
+    .container-detail{
         display: flex;
-        justify-content: space-between;
-    }
+        justify-content: space-evenly;
+        font-family: 'Roboto Condensed', sans-serif;
 
-    nav{
-        padding-bottom: 20px;
-        h4{
-            color: $whiteColor;
-            text-transform: uppercase;
-            padding-bottom: 15px;
-            font-size: 1.5rem;
-        }
+        .info-comic{
+            width: 50%;
+            h2{
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
 
-        ul{
-        
-        li{
-                list-style: none;
-                padding-bottom: 5px;
+            .price-available{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+                width: 60%;
+                padding: 15px;
+                border-right: 1px solid #357739;
 
-            a{
-                    text-decoration: none;
-                    color: grey;
-                    font-family: sans-serif;
+                .price{
+                    color: #bafd9c;
 
-                    &:hover{
-                        text-decoration: underline;
+                    .cost{
+                        color: white;
                     }
                 }
+
+                .available{
+                    color: #bafd9c;
+                }
             }
-        }
-    }
 
-    
-    .bg-followUs{
-        background-color: #303030;
-        height: 100px;
-    }
+            .check-available{
+                width: 40%;
+                color: white;
+                display: flex;
+                justify-content: center;
+            }
+            
 
-    .followUs-container{
-        width: $generalWidth;
-        margin: $generalMargin;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .d-flex{
-        display: flex;
-    }
-
-    .btn-footer{
-        background-color: transparent;
-        border: 2px solid $primaryDCcolor;
-        padding: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $whiteColor;
-
-        &:hover{
-            cursor: pointer;
-            box-shadow: 2px 2px 2px black;
-        }
-    }
-
-    .text-follow{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        h4{
-            text-transform: uppercase;
-            color: $primaryDCcolor;
-            padding-right: 15px;
-        }
-
-        img{
-            padding: 0 10px;
-
-            &:hover{
-                cursor: pointer;
-                filter: brightness(200%);
+            .price-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #55ba59;
+                border-bottom: 1px solid #357739;
+                font-family: Arial, Helvetica, sans-serif, sans-serif;
+                font-weight: bold;
+                height: 50px;
             }
         }
     }
